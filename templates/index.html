@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Form
+================================================== -->
+<div class="jumbotron vertical-center">
+    <div class="container">
+        <h1>Python Chat</h1>
+
+        <p>Send more than words.</p>
+
+        <div class="form">
+            <form action="/login" method="post"
+                  class="form-inline">
+                <input type="text" class="form-control"
+                       id="name"
+                       name="name" placeholder="Name">
+                <button type="submit"
+                        class="btn btn-default">login
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

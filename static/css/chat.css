@@ -1,0 +1,13 @@
+li {
+padding: 10px 5px;
+border-top:1px solid #CCC;
+border-bottom:1px solid #CCC;
+margin-top: -1px;
+}
+
+ul.member {
+}
+
+ul.member {
+    float: left;
+}
