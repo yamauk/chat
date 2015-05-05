@@ -72,8 +72,7 @@ link_it.is_safe = True
 
 
 if __name__ == '__main__':
-    app.debug = True  # デバッグモード有効化
-    socketio.run(app, port=5555)
+    socketio.run(app,host='0.0.0.0')
 
     # server = pywsgi.WSGIServer(('0.0.0.0', 5000), app,
     # handler_class=WebSocketHandler)
