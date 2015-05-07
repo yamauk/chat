@@ -30,6 +30,13 @@ if($('#login-input').val() == ""){
 }
     return true;
 }
+
+
+
+
+
+
+
 </script>
 <div class="jumbotron vertical-center">
     <div class="container">
@@ -40,16 +47,31 @@ if($('#login-input').val() == ""){
         <div class="form">
             <form action="/chat" method="post" name="login-form"
                   class="form-inline" onSubmit="return checkForm()">
-                <input type="text" class="form-control"
-                       name="login-input"
-                       id="login-input"
-                       placeholder="Name">
-                <button type="submit"
-                        class="btn btn-default" id="login-button">login
-                </button>
+                <div class="form-group">
+
+                    <select class="form-control" name="login-color">
+                        <option value="#000000">Black</option>
+                        <option value="#ff0000">Red</option>
+                        <option value="#000080">Navy</option>
+                        <option value="#0000ff">Blue</option>
+                        <option value="#00ff00">Lime</option>
+                    </select>
+                    <input type="hidden"
+                           name="login-color"
+                           id="login-color"
+                           >
+                    <input type="text" class="form-control"
+                           name="login-input"
+                           id="login-input"
+                           placeholder="Name">
+                    <button type="submit"
+                            class="btn btn-default" id="login-button">Login
+                    </button>
+                </div>
             </form>
         </div>
     </div>
 </div>
+
 </body>
 </html>

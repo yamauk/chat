@@ -1,13 +1,18 @@
-li {
+li.message {
 padding: 10px 5px;
 border-top:1px solid #CCC;
 border-bottom:1px solid #CCC;
 margin-top: -1px;
 }
 
-ul.member {
+ul.member{
+margin: 0 0 0 3em;
+}
+li.member {
+margin: 0 0 0 3em;
 }
 
-ul.member {
-    float: left;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }

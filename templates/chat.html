@@ -24,11 +24,9 @@
 <script src="/static/js/bootstrap.min.js"></script>
 
 
-
 <!--chat.js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
 <script src="/static/js/chat.js"></script>
-
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -36,7 +34,8 @@
                   name="message-form" onsubmit="return false;">
                 <div class="form-group">
                     <input type="text" class="form-control"
-                           placeholder="Message" name="message-input" id="message-input" value=""
+                           placeholder="Message" name="message-input"
+                           id="message-input" value=""
                            size="70">
                 </div>
                 <button type="submit" class="btn btn-default"
@@ -46,8 +45,19 @@
         </div>
     </div>
 </nav>
-<ul>
-    <li>hoge</li>
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-inline" id="member">
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+            <ul class="message" id="message">
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
